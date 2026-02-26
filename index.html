@@ -54,13 +54,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.82rem;
+      gap: 3rem;
       padding: 2rem;
       width: 100%;
       max-width: 442px;
     }
 
-    .logo-wrap { animation: fadeDown 1.1s cubic-bezier(.22,.68,0,1.2) 0.1s both; }
+    .logo-wrap {
+      animation: fadeDown 1.1s cubic-bezier(.22,.68,0,1.2) 0.1s both;
+      padding: 2.8rem 3.2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1 / 1;
+    }
     .logo-img { width: min(310px, 62vw); display: block; }
 
     .coming-soon {
@@ -266,7 +273,7 @@
 
   <div class="location-bar">
     <span>📍</span>
-    <span>Calle Doradilla 3 · El Torcal · Málaga</span>
+    <span class="loc-full">Calle Doradilla 3 · El Torcal · Málaga</span><span class="loc-short">C/ Doradilla 3, El Torcal, Málaga</span>
   </div>
 
   <div class="content">
@@ -321,10 +328,11 @@
     if (localStorage.getItem('cookiesAccepted') === '1') {
       banner.style.display = 'none';
     }
-    document.getElementById('cookieAcceptBtn').addEventListener('click', function() {
+    document.getElementById('cookieAcceptBtn').onclick = function() {
       localStorage.setItem('cookiesAccepted', '1');
       banner.style.display = 'none';
-    });
+      return false;
+    };
 
     // Modal
     var overlay = document.getElementById('modalOverlay');
