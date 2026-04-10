@@ -858,3 +858,25 @@
       interes: this.interes.value,
       mensaje: this.mensaje.value
     
+    };
+
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyT5mRE2kN3BzoFZ5-nz5SDCE1HH5OljmL57t7KGT8SbDUWQPT2ttrFLC0JOVeSNznq/exec';
+
+    fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: JSON.stringify(payload)
+    }).then(function() {
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+      window.scrollTo({top: document.getElementById('contacto').offsetTop - 80, behavior: 'smooth'});
+    }).catch(function() {
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+
+    return false;
+  });
+</script>
+</body>
+</html>
