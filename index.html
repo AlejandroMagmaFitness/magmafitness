@@ -75,6 +75,13 @@
       background-size:cover; background-position:center center; background-attachment:fixed;
       filter:brightness(0.72) saturate(0.6);
     }
+    @media(max-width:768px) {
+      .hero-bg {
+        background-attachment:scroll;
+        background-size:150%;
+        background-position:center center;
+      }
+    }
     .hero-overlay {
       position:absolute; inset:0;
       background:
@@ -396,11 +403,11 @@
 </nav>
 <div class="nav-mobile" id="navMobile">
   <a href="#sobre" onclick="toggleMenu()">Nosotros</a>
+  <a href="#actividades" onclick="toggleMenu()">Actividades</a>
+  <a href="#horarios" onclick="toggleMenu()">Horarios</a>
   <a href="#galeria" onclick="toggleMenu()">Instalaciones</a>
   <a href="#localizacion" onclick="toggleMenu()">Localización</a>
-  <a href="#actividades" onclick="toggleMenu()">Actividades</a>
   <a href="#tarifas" onclick="toggleMenu()">Tarifas</a>
-  <a href="#horarios" onclick="toggleMenu()">Horarios</a>
   <a href="#contacto" onclick="toggleMenu()">Contacto</a>
   <a href="https://wodbuster.com/" target="_blank" class="btn-zona">Zona Socios →</a>
 </div>
@@ -420,7 +427,7 @@
       <a href="#actividades" class="btn-secondary">Ver actividades</a>
     </div>
   </div>
-  <div class="hero-scroll">Scroll</div>
+  
 </section>
 
 <!-- SOBRE NOSOTROS -->
@@ -459,6 +466,101 @@
 </section>
 
 
+
+<!-- ACTIVIDADES -->
+<section id="actividades">
+  <div class="container">
+    <div class="section-label">Clases dirigidas</div>
+    <div class="section-title">Nuestras actividades</div>
+    <div class="divider"></div>
+    <p class="section-subtitle">Grupos reducidos con entrenador siempre pendiente de ti. Adaptado a todos los niveles.</p>
+    <div class="actividades-grid">
+      <div class="act-card">
+        <div class="act-icon">⚡</div>
+        <div class="act-name">Funcional 2.0</div>
+        <div class="act-tag">Alta intensidad · 55 min</div>
+        <div class="act-desc">Entrenamiento dinámico que imita los movimientos naturales del día a día — pero llevado al siguiente nivel. Circuitos con kettlebells, TRX, bosu y peso corporal.</div>
+        <ul class="act-features">
+          <li>Fuerza, resistencia, movilidad y core</li>
+          <li>Mayor intensidad y progresiones exigentes</li>
+          <li>Ideal si ya tienes algo de experiencia</li>
+        </ul>
+      </div>
+      <div class="act-card">
+        <div class="act-icon">🌿</div>
+        <div class="act-name">Vitalite</div>
+        <div class="act-tag">Baja intensidad · Todos los niveles</div>
+        <div class="act-desc">Clase suave y revitalizante para mejorar tu vitalidad, movilidad y bienestar general de forma segura y accesible. Energía y buena sensación garantizadas.</div>
+        <ul class="act-features">
+          <li>Movilidad articular y flexibilidad</li>
+          <li>Equilibrio, postura y core</li>
+          <li>Ideal para principiantes y adultos</li>
+        </ul>
+      </div>
+      <div class="act-card">
+        <div class="act-icon">🍑</div>
+        <div class="act-name">Gluteus</div>
+        <div class="act-tag">Especializada · Tonificación</div>
+        <div class="act-desc">Clase 100% enfocada en el entrenamiento de glúteos. Diseñada para fortalecer, levantar, tonificar y dar forma con resultados visibles.</div>
+        <ul class="act-features">
+          <li>Hip thrusts, sentadillas, abducciones</li>
+          <li>Bandas, mancuernas y peso corporal</li>
+          <li>Alta activación y resultados reales</li>
+        </ul>
+      </div>
+      <div class="act-card">
+        <div class="act-icon">💪</div>
+        <div class="act-name">Strong</div>
+        <div class="act-tag">Fuerza · Hipertrofia</div>
+        <div class="act-desc">Entrenamiento de fuerza intenso para construir músculo, aumentar la fuerza máxima y mejorar la resistencia muscular en todo el cuerpo.</div>
+        <ul class="act-features">
+          <li>Pesas libres y máquinas</li>
+          <li>Deadlifts, sentadillas, presses, remos</li>
+          <li>Progresión de cargas exigente</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HORARIOS -->
+<section id="horarios">
+  <div class="container">
+    <div class="section-label">Cuándo entrenamos</div>
+    <div class="section-title">Horario de clases</div>
+    <div class="divider"></div>
+    <p class="section-subtitle">Clases dirigidas de lunes a jueves. Consulta disponibilidad actualizada en Zona Socios.</p>
+    <div class="horarios-layout">
+      <div class="horario-bloque">
+        <div class="horario-bloque-header">Lunes & Miércoles</div>
+        <div class="horario-row"><div class="horario-hora">09:30</div><div class="horario-clase">Funcional 2.0</div></div>
+        <div class="horario-row"><div class="horario-hora">10:30</div><div class="horario-clase">Vitalite</div></div>
+        <div class="horario-row"><div class="horario-hora">17:30</div><div class="horario-clase">Gluteus</div></div>
+        <div class="horario-row"><div class="horario-hora">18:30</div><div class="horario-clase">Funcional 2.0</div></div>
+        <div class="horario-row"><div class="horario-hora">19:30</div><div class="horario-clase">Funcional 2.0</div></div>
+      </div>
+      <div class="horario-bloque">
+        <div class="horario-bloque-header">Martes & Jueves</div>
+        <div class="horario-row"><div class="horario-hora">09:00</div><div class="horario-clase">Vitalite</div></div>
+        <div class="horario-row"><div class="horario-hora">10:00</div><div class="horario-clase">Funcional 2.0</div></div>
+        <div class="horario-row"><div class="horario-hora">17:00</div><div class="horario-clase">Gluteus</div></div>
+        <div class="horario-row"><div class="horario-hora">18:00</div><div class="horario-clase">Strong</div></div>
+        <div class="horario-row"><div class="horario-hora">19:00</div><div class="horario-clase">Funcional 2.0</div></div>
+      </div>
+    </div>
+    <div class="horario-general">
+      <div class="horario-general-item">
+        <div class="hg-label">Horario del centro Lun–Vie</div>
+        <div class="hg-val">09:00–13:00 · 17:00–21:00</div>
+      </div>
+      <div class="horario-general-item">
+        <div class="hg-label">Sábados, domingos y festivos</div>
+        <div class="hg-val">Cerrado</div>
+      </div>
+    </div>
+    <p class="horario-note">* Horario de clases sujeto a cambios. Reserva tu plaza en Zona Socios.</p>
+  </div>
+</section>
 
 <!-- GALERÍA -->
 <section id="galeria" style="background:var(--dark); padding:5rem 0;">
@@ -548,62 +650,6 @@
   </div>
 </section>
 
-<!-- ACTIVIDADES -->
-<section id="actividades">
-  <div class="container">
-    <div class="section-label">Clases dirigidas</div>
-    <div class="section-title">Nuestras actividades</div>
-    <div class="divider"></div>
-    <p class="section-subtitle">Grupos reducidos con entrenador siempre pendiente de ti. Adaptado a todos los niveles.</p>
-    <div class="actividades-grid">
-      <div class="act-card">
-        <div class="act-icon">⚡</div>
-        <div class="act-name">Funcional 2.0</div>
-        <div class="act-tag">Alta intensidad · 55 min</div>
-        <div class="act-desc">Entrenamiento dinámico que imita los movimientos naturales del día a día — pero llevado al siguiente nivel. Circuitos con kettlebells, TRX, bosu y peso corporal.</div>
-        <ul class="act-features">
-          <li>Fuerza, resistencia, movilidad y core</li>
-          <li>Mayor intensidad y progresiones exigentes</li>
-          <li>Ideal si ya tienes algo de experiencia</li>
-        </ul>
-      </div>
-      <div class="act-card">
-        <div class="act-icon">🌿</div>
-        <div class="act-name">Vitalite</div>
-        <div class="act-tag">Baja intensidad · Todos los niveles</div>
-        <div class="act-desc">Clase suave y revitalizante para mejorar tu vitalidad, movilidad y bienestar general de forma segura y accesible. Energía y buena sensación garantizadas.</div>
-        <ul class="act-features">
-          <li>Movilidad articular y flexibilidad</li>
-          <li>Equilibrio, postura y core</li>
-          <li>Ideal para principiantes y adultos</li>
-        </ul>
-      </div>
-      <div class="act-card">
-        <div class="act-icon">🍑</div>
-        <div class="act-name">Gluteus</div>
-        <div class="act-tag">Especializada · Tonificación</div>
-        <div class="act-desc">Clase 100% enfocada en el entrenamiento de glúteos. Diseñada para fortalecer, levantar, tonificar y dar forma con resultados visibles.</div>
-        <ul class="act-features">
-          <li>Hip thrusts, sentadillas, abducciones</li>
-          <li>Bandas, mancuernas y peso corporal</li>
-          <li>Alta activación y resultados reales</li>
-        </ul>
-      </div>
-      <div class="act-card">
-        <div class="act-icon">💪</div>
-        <div class="act-name">Strong</div>
-        <div class="act-tag">Fuerza · Hipertrofia</div>
-        <div class="act-desc">Entrenamiento de fuerza intenso para construir músculo, aumentar la fuerza máxima y mejorar la resistencia muscular en todo el cuerpo.</div>
-        <ul class="act-features">
-          <li>Pesas libres y máquinas</li>
-          <li>Deadlifts, sentadillas, presses, remos</li>
-          <li>Progresión de cargas exigente</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- TARIFAS -->
 <section id="tarifas">
   <div class="container">
@@ -671,45 +717,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- HORARIOS -->
-<section id="horarios">
-  <div class="container">
-    <div class="section-label">Cuándo entrenamos</div>
-    <div class="section-title">Horario de clases</div>
-    <div class="divider"></div>
-    <p class="section-subtitle">Clases dirigidas de lunes a jueves. Consulta disponibilidad actualizada en Zona Socios.</p>
-    <div class="horarios-layout">
-      <div class="horario-bloque">
-        <div class="horario-bloque-header">Lunes & Miércoles</div>
-        <div class="horario-row"><div class="horario-hora">09:30</div><div class="horario-clase">Funcional 2.0</div></div>
-        <div class="horario-row"><div class="horario-hora">10:30</div><div class="horario-clase">Vitalite</div></div>
-        <div class="horario-row"><div class="horario-hora">17:30</div><div class="horario-clase">Gluteus</div></div>
-        <div class="horario-row"><div class="horario-hora">18:30</div><div class="horario-clase">Funcional 2.0</div></div>
-        <div class="horario-row"><div class="horario-hora">19:30</div><div class="horario-clase">Funcional 2.0</div></div>
-      </div>
-      <div class="horario-bloque">
-        <div class="horario-bloque-header">Martes & Jueves</div>
-        <div class="horario-row"><div class="horario-hora">09:00</div><div class="horario-clase">Vitalite</div></div>
-        <div class="horario-row"><div class="horario-hora">10:00</div><div class="horario-clase">Funcional 2.0</div></div>
-        <div class="horario-row"><div class="horario-hora">17:00</div><div class="horario-clase">Gluteus</div></div>
-        <div class="horario-row"><div class="horario-hora">18:00</div><div class="horario-clase">Strong</div></div>
-        <div class="horario-row"><div class="horario-hora">19:00</div><div class="horario-clase">Funcional 2.0</div></div>
-      </div>
-    </div>
-    <div class="horario-general">
-      <div class="horario-general-item">
-        <div class="hg-label">Horario del centro Lun–Vie</div>
-        <div class="hg-val">09:00–13:00 · 17:00–21:00</div>
-      </div>
-      <div class="horario-general-item">
-        <div class="hg-label">Sábados, domingos y festivos</div>
-        <div class="hg-val">Cerrado</div>
-      </div>
-    </div>
-    <p class="horario-note">* Horario de clases sujeto a cambios. Reserva tu plaza en Zona Socios.</p>
   </div>
 </section>
 
